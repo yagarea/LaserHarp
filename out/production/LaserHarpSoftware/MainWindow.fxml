@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <MenuBar id="menuBar" layoutX="111.0" layoutY="109.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Main">
+                    <items>
+                        <MenuItem id="soundLibraryTestMenuItem" mnemonicParsing="false" text="Sound library test" />
+                        <MenuItem id="rescanSoundSourcesMenuItem" mnemonicParsing="false" text="Rescan sound sources" />
+                        <MenuItem id="rescanSoundSourcesMenuItem" mnemonicParsing="false" text="Virtual harp" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Settings">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Select diferent sound source folder" />
+                        <MenuItem id="selectDiferentSoundFileExtensionMenuItem" mnemonicParsing="false" text="Select diferent sound file extension" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="About">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Repository" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <ListView id="soundLibraryListView" blendMode="DARKEN" layoutX="24.0" layoutY="56.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="28.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </ListView>
+        <Slider id="volumeSlider" layoutX="325.0" layoutY="118.0" nodeOrientation="LEFT_TO_RIGHT" showTickMarks="true" value="90.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="7.0">
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND" />
+            </cursor>
+        </Slider>
+        <ToolBar layoutX="287.0" layoutY="174.0" maxHeight="27.0" minHeight="27.0" prefHeight="27.0" prefWidth="200.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="29.0">
+            <items>
+                <Label text="Port:" />
+                <ComboBox id="portComboBox" maxHeight="20.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0">
+                    <effect>
+                        <Glow />
+                    </effect>
+                </ComboBox>
+            </items>
+        </ToolBar>
+      <ScrollPane layoutX="317.0" layoutY="121.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="56.0" />
+    </children>
+    <cursor>
+        <Cursor fx:constant="DEFAULT" />
+    </cursor>
+</AnchorPane>
